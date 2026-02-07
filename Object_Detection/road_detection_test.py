@@ -150,7 +150,7 @@ class SplitDataset(Dataset):
         return img_tensor, mask_tensor
 
 # Create datasets
-root_dir = 'data_road/data_road' #path to the dataset
+root_dir = 'data_road' # path to the dataset
 
 # Get all training image paths
 all_image_paths = sorted(glob.glob(os.path.join(root_dir, 'training', 'image_2', '*.png')))
